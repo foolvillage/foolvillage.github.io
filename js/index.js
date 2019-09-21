@@ -1,26 +1,20 @@
 const Home = {
-    template: ' <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"> \
-                    <div class="col-md-5 p-lg-5 mx-auto my-5"> \
-                        <h1 class="display-4 font-weight-normal">Fool Village</h1> \
-                        <p class="lead font-weight-normal">关于青春、成长、欢乐、痛苦、坚持、放弃、等待和放弃等待的回忆……</p> \
-                    </div> \
+    template: ' <div class="starter-template"> \
+                    <h1>Fool Village</h1> \
+                    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> \
                 </div>'
 }
 
 const Photo = {
-    template: ' <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"> \
-                    <div class="col-md-5 p-lg-5 mx-auto my-5"> \
-                        <h1 class="display-4 font-weight-normal">相册</h1> \
-                        <p class="lead font-weight-normal">记得当年那个小……</p> \
-                    </div> \
+    template: ' <div class="starter-template"> \
+                    <h1>相册</h1> \
+                    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> \
                 </div>'
 }
 
 const About = {
-    template: ' <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light"> \
-                    <div class="col-md-5 p-lg-5 mx-auto my-5"> \
-                        <h1 class="display-4 font-weight-normal">关于我们</h1> \
-                        <p class="lead font-weight-normal">钢铁是怎样的没有炼成的！</p> \
-                    </div> \
+    template: ' <div class="starter-template"> \
+                    <h1>关于我们</h1> \
+                    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> \
                 </div>'
 }
