@@ -1,246 +1,59 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.58.3" /><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge"><title>Fool Village</title>
-    
-<link rel="icon" type="image/png" href="/images/favicon.png" />
+<!doctype html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/style.min.f4d8930701ac14f288dcb4efc7475f6ccd49ced8b270c4a433d0cd58b6eb8a93.css" integrity="sha256-9NiTBwGsFPKI3LTvx0dfbM1JztiycMSkM9DNWLbripM=">
-<link rel="stylesheet" type="text/css" href="/css/monokai-sublime.9.15.8.min.min.3a5d282f03108101d715e80fd4c07b55502ec4673fc063f2b6e415d4def5b354.css" integrity="sha256-Ol0oLwMQgQHXFegP1MB7VVAuxGc/wGPytuQV1N71s1Q=">
-<link rel="stylesheet" type="text/css" href="/css/icons.min.56faae60f16170cbfab5c036036aafb37d367aa4d4f4483b335bd98b891fa00b.css" integrity="sha256-VvquYPFhcMv6tcA2A2qvs302eqTU9Eg7M1vZi4kfoAs=">
-<link rel="stylesheet" type="text/css" href="/css/mycss.min.8dbf4fbe59ea8af9be1d67d084bc8698e032e05602f08b8fe84ca0d2d46c298d.css" integrity="sha256-jb9Pvlnqivm&#43;HWfQhLyGmOAy4FYC8IuP6Eyg0tRsKY0=">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 
-  </head>
-  <body>
-    
-    <div id="preloader">
-      <div id="status"></div>
-    </div><section class="hero is-fullheight is-default is-bold"><nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.1.3/dist/vue-router.js"></script>
 
-      
-      
-      
-      <a class="navbar-item">
-        <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
-          <svg width="1000px" height="1000px">
-            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-            <path class="path2" d="M 300 500 L 700 500"></path>
-            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-          </svg>
-          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-        </div>
-        <div class="navbar-item left-menu-icon-wrapper">Tags</div>
-      </a>
+    <title>Fool Village</title>
+</head>
 
-      <div class="navbar-item is-expanded"></div>
-      <a class="navbar-item is-hidden-desktop">  
-        <div data-target="navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
-        <div data-target="navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
-          <svg width="1000px" height="1000px">
-            <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-            <path class="path2" d="M 300 500 L 700 500"></path>
-            <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-          </svg>
-          <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-        </div>
-      </a>
-    </div>
-
-    
-
-    <div id="navbar-menu" class="navbar-menu is-static">
-      
-      <div class="navbar-end">
-        <a href="/about" class="navbar-item is-secondary">
-          About Me
-        </a><a href="https://foolvillage.github.io/post/" class="navbar-item is-secondary">Posts</a></div>
-    </div>
-
-
-
-
-  </div>
-</nav><nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
-  <div class="container">
-      <div class="navbar-brand">
-  
-        
-        
-        
-        <a class="navbar-item">
-          <div class="menu-icon-wrapper left-menu-icon-wrapper" style="visibility: visible;">
-            <svg width="1000px" height="1000px">
-              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-              <path class="path2" d="M 300 500 L 700 500"></path>
-              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-            </svg>
-            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-          </div>
-          <div class="navbar-item left-menu-icon-wrapper">Tags</div>
-        </a>
-  
-        <div class="navbar-item is-expanded"></div>
-        <a class="navbar-item is-hidden-desktop">  
-          <div data-target="cloned-navbar-menu" class="navbar-item right-menu-icon-wrapper is-hidden-desktop">Menu</div>
-          <div data-target="cloned-navbar-menu" class="menu-icon-wrapper right-menu-icon-wrapper" style="visibility: visible;">
-            <svg width="1000px" height="1000px">
-              <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-              <path class="path2" d="M 300 500 L 700 500"></path>
-              <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-            </svg>
-            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-          </div>
-        </a>
-      </div>
-  
-      
-  
-      <div id="cloned-navbar-menu" class="navbar-menu is-static">
-        <div class="navbar-end">
-          <a href="/about" class="navbar-item is-secondary">
-            About Me
-          </a><a href="https://foolvillage.github.io/post/" class="navbar-item is-secondary">Posts</a></div>
-      </div>
-  
-  
-  
-  
-    </div>
-  </nav>
-<div class="hero-body">
-        <div class="container">
-            <div class="columns is-vcentered">
-            <div class="column is-5 is-offset-1 landing-caption">
-                <h1 class="title is-1 is-bold is-spaced">Fool Village</h1><h2 class="subtitle is-5 is-muted">
-                兰州西北中学 1996 - 1999 高中 4 班
-                </h2>
-            </div>
-            <div class="column is-5 is-offset-1">
-                <figure class="image"><img src="/images/main.png" 
-                     style="width:900px" alt="Myself">
-                </figure>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section><footer class="footer footer-dark">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <img src="/footer.svg" alt="">
-        
-      </div>
-      
-    <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-              <h3>Website</h3>
-          </div>
-          <ul class="link-list">
-            <li>
-                <a href="/credits">
-                  <span class="icon"><i class="fa fa-cube"></i></span>
-                  Credits
+<body>
+    <div id="app">
+        <nav class="site-header sticky-top py-1">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <strong>
+                        <router-link to="/">Fool Village</router-link>
+                    </strong>
                 </a>
-              </li>
-            <li>
-              <a href="/tags">
-                <span class="icon"><i class="fa fa-tag"></i></span> 
-                All Tags
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-              <h3>Contacts</h3>
-          </div>
-          <ul class="link-list">
-            <li>
-              <a href="https://www.linkedin.com/your_linkedin_profile/" target="_blank">
-                <span class="icon"><i class="fa fa-linkedin"></i></span>
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a href="mailto:name.surname@domain.com" target="_blank">
-                <span class="icon"><i class="fa fa-envelope"></i></span>
-                name.surname@domain.com
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="footer-column">
-          <div class="footer-header">
-              <h3>Copyright</h3>
-          </div>
-          <ul class="link-list">
-            <li>
-              <a>
-                <span class="icon"><i class="fa fa-copyright"></i></span>
-                Julia The White - 2019
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</footer>
-    <div id="backtotop"><a href="#"></a></div><div class="sidebar">
-  <div class="sidebar-header"><img src="/sidebar.svg" alt="">
-    
-    <a class="sidebar-close" href="javascript:void(0);">
-      <i data-feather="x"></i>
-    </a>
-  </div>
-  <div class="inner">
-    <ul class="sidebar-menu">
-      <li class="no-children">
-          <a href="/tags">
-            <div class="columns">
-              <table width="100%">  
-                <tr>
-                  <td class="">
-                    <span class="icon"><i class="fa fa-cubes"></i></span>All Tags
-                  </td>
-                  <td class="has-text-right" >
-                      
-                  </td>
-                </tr>
-              </table>
+                <a class="py-2 d-none d-md-inline-block">
+                    <router-link to="/photo">相册</router-link>
+                </a>
+                <a class="py-2 d-none d-md-inline-block">
+                    <router-link to="/about">关于我们</router-link>
+                </a>
             </div>
-          </a></ul>
-  </div>
-</div>
+        </nav>
+        <router-view></router-view>
+    </div>
 
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-<script src="/js/jquery-2.2.4.min.dead7ea11aa9f68488bfe2f9a1be00b7773bea3874f0a221cb898f5c4b041b6a.js" integrity="sha256-3q1&#43;oRqp9oSIv&#43;L5ob4At3c76jh08KIhy4mPXEsEG2o="></script>
-<script src="/js/feather.4.22.0.min.df46a360906c5f1e61c5867bb42b1f7a8b0166f8351e175a1a4f2958f331e42e.js" integrity="sha256-30ajYJBsXx5hxYZ7tCsfeosBZvg1HhdaGk8pWPMx5C4="></script>
-<script src="/js/modernizr-2.8.3.min.aaa4a98000f280d8d1b54f8fb20e8888a59acdffe43bbcca7686b66712453590.js" integrity="sha256-qqSpgADygNjRtU&#43;Psg6IiKWazf/kO7zKdoa2ZxJFNZA="></script>
-<script src="/js/fresh_new.min.ea12c4337372ab56ec896e0e82478c3d64b9d8396c4cda4e44ea7c16b948d4f6.js" integrity="sha256-6hLEM3Nyq1bsiW4OgkeMPWS52DlsTNpOROp8FrlI1PY="></script>
-<script src="/js/highlight.9.15.8.pack.min.ae2668386ec83581238a18cdc4ef3c629a033e39308dbfe27407b1368cc05570.js" integrity="sha256-riZoOG7INYEjihjNxO88YpoDPjkwjb/idAexNozAVXA="></script>
-<script src="/js/highlightjs-line-numbers.2.7.0.min.min.ddfe282e07b7ec1ed069c23f92c7c8216ddb3f1879c4e962d37fd52adbd15a05.js" integrity="sha256-3f4oLge37B7QacI/ksfIIW3bPxh5xOli03/VKtvRWgU="></script><script>hljs.initHighlightingOnLoad();</script>
-<script>hljs.initLineNumbersOnLoad();</script>
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('.codeinline').forEach((block) => {
-      hljs.highlightBlock(block);
-    });
-  });
-</script></body>
+    <script src="js/index.js"></script>
+    <script src="js/router.js"></script>
+</body>
+
 </html>
