@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.97d65a70736f137fe5ff0cc0b3d0a9e3.css"],"names":[],"mappings":"AACA,KACE,gBACF,CACA,kBACE,mBAAoB,CACpB,iBACF","file":"app.97d65a70736f137fe5ff0cc0b3d0a9e3.css","sourcesContent":["\nbody {\n  padding-top: 5rem;\n}\n.starter-template {\n  padding: 3rem 1.5rem;\n  text-align: center;\n}\n"]}
